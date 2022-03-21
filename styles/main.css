@@ -1,0 +1,343 @@
+/* Irfan Nada Bayu Samudera */
+
+/* Import Font */
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/Helvetica.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/Helvetica-Bold.ttf);
+  font-weight: 700;
+}
+
+/* Body */
+
+body {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: black !important;
+}
+.container {
+  overflow-x: hidden;
+}
+/* Navbar */
+.navbar-bcr {
+  padding-top: 25px;
+  background-color: #f1f3ff;
+}
+.nav-item .nav-link {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.container-nav {
+  padding: 0px;
+  max-width: 100%;
+}
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200mx linear;
+}
+
+/* Whole Page */
+.btn-success {
+  background-color: #5cb85f;
+  border: none;
+  font-size: 14px;
+}
+.page-landing {
+  margin-top: 75px;
+  max-width: 100%;
+}
+.delete-padding {
+  padding: 0px !important;
+}
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+.row {
+  --bs-gutter-x: 0;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.container {
+  max-width: 100%;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav-link {
+  font-weight: 400 !important;
+  color: #000 !important;
+}
+
+/* Section Main */
+.main {
+  background-color: #f1f3ff;
+  width: 100%;
+  padding-top: 37px;
+}
+
+.main-left {
+  margin-top: 90px;
+}
+
+.bgimg {
+  padding-top: 165px;
+}
+
+/* Second Section */
+.img-service {
+  margin-top: 105px;
+}
+
+.second-desc {
+  margin-left: auto;
+  margin-top: 136px;
+}
+.second-desc-head {
+  margin-bottom: 24px;
+}
+.second-desc-sub {
+  margin-bottom: 18px;
+}
+.second-desc-item {
+  margin-bottom: 20px;
+}
+.second-desc-item-p {
+  margin-left: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Third Section */
+.third {
+  margin-top: 100px;
+}
+
+.third-card-item {
+  width: 265px;
+  height: 196px;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-right: auto;
+}
+.third-card-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0px !important;
+}
+
+/* Fourth Section */
+.fourth {
+  margin-top: 100px;
+}
+.fourth-sub {
+  margin-bottom: 40px !important;
+}
+.fourth-carousel-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Carousel */
+.carousel,
+.carousel-innr,
+.carousel-inner > .carousel-item {
+  overflow: hidden;
+}
+.carousel-inner > .carousel-item.active,
+.carousel-inner > .carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.carousel-item.active {
+  align-content: center;
+}
+.carousel-inner:before {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  content: "";
+  display: block;
+  background-color: #fff;
+}
+.carousel-inner:after {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 100%;
+  content: "";
+  display: block;
+  background-color: #fff;
+}
+
+.card-custom {
+  width: 620px;
+  height: 270px;
+  background-color: #f1f3ff;
+}
+.testi-content {
+  text-align: left !important;
+}
+
+/* Section Fourth */
+.fourth-carousel-button {
+  border: none;
+  background-color: #fff;
+}
+
+/* Section Fifth */
+.fifth-card-content {
+  background-color: #0d28a6;
+  color: white;
+  margin-top: 100px;
+  height: 326px;
+}
+.fifth-card-title {
+  margin-top: 48px;
+  font-weight: 700;
+}
+.fifth-card-text {
+  margin-top: 16px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+.fifth-btn {
+  margin-top: 52px;
+}
+
+/* Section Sixth */
+.sixth {
+  margin-top: 104px;
+}
+
+.sixth-faq-title {
+  margin-right: 132px;
+}
+
+/* Footer */
+footer {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.footer-img-socmed {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* For Screen With Width 768px and Up */
+@media (min-width: 768px) {
+  .ms-md-11,
+  .ml-md-11 {
+    margin-left: 136px !important;
+  }
+  .ms-md-11,
+  .mr-md-11 {
+    margin-right: 136px !important;
+  }
+  .ps-md-11,
+  .pl-md-11 {
+    padding-left: 136px !important;
+  }
+  .ps-md-11,
+  .pr-md-11 {
+    padding-right: 136px !important;
+  }
+  .pr-md-12 {
+    margin-right: 207px !important;
+  }
+  .pl-md-14 {
+    padding-left: 86px !important;
+  }
+}
+
+/* For Screen With Width 767px and Below */
+@media (max-width: 767px) {
+  .ms-13 {
+    text-align: center;
+  }
+  .third-card-item {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .card-custom {
+    width: 250px;
+    height: 400px;
+    background-color: #f1f3ff;
+    padding-left: auto;
+    padding-right: auto;
+  }
+  .img-small {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fourth-carousel-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .testi-content {
+    text-align: center !important;
+  }
+  .img-service {
+    width: 300px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .fifth-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+  }
+  .sixth-accordion-sm {
+    padding-left: 8px;
+    padding-right: 10px;
+  }
+  .fifth-card-title {
+    margin-top: 0px;
+    font-weight: 700;
+  }
+}
+
+/* For Screen With Width 991px and Below */
+@media (max-width: 991px) {
+  .pl-md-14 {
+    padding-left: 0px !important;
+  }
+  .toggler-custom {
+    margin-right: 10px;
+  }
+  .collapse-custom {
+    margin-top: 25px;
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+  }
+  .sm-mid {
+    text-align: center;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+@media (min-width: 991px) {
+  .pl-md-14 {
+    padding-left: 0px !important;
+  }
+  .toggler-custom {
+    display: none;
+  }
+}

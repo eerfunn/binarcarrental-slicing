@@ -87,7 +87,7 @@ h2 {
 }
 
 .bgimg {
-  padding-top: 165px;
+  padding-top: 100px;
 }
 
 /* Second Section */
@@ -273,7 +273,7 @@ footer {
     margin-left: 5px;
   }
   .card-custom {
-    width: 250px;
+    width: 250px !important;
     height: 400px;
     background-color: #f1f3ff;
     padding-left: auto;
@@ -284,8 +284,8 @@ footer {
     margin-right: auto;
   }
   .fourth-carousel-padding {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
   .testi-content {
     text-align: center !important;
@@ -308,6 +308,9 @@ footer {
     margin-top: 0px;
     font-weight: 700;
   }
+  .card {
+    width: 100%;
+  }
 }
 
 /* For Screen With Width 991px and Below */
@@ -327,9 +330,16 @@ footer {
     right: 15%;
   }
   .sm-mid {
-    text-align: center;
     margin-left: 10px !important;
     margin-right: 10px !important;
+  }
+  .fifth-card-content {
+    min-height: 400px !important;
+    margin-top: 0px;
+    overflow: hidden;
+  }
+  .fifth-card {
+    margin-top: 100px;
   }
 }
 

@@ -44,24 +44,55 @@
                 <a href="#testimonial" class="nav-link">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a href="#tester" class="nav-link">FAQ</a>
+                <a href="#faq" class="nav-link">FAQ</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="btn btn-success px-4 text-white">Register</a>
               </li>
             </ul>
           </div>
+          <div class="incativeSideBG" id="incativeSide"></div>
+          <div class="sidenav" id="mySidenav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="d-flex">
+                  <div class="justify-content-start">
+                    <a href="#" class="nav-link side-logo">BCR</a>
+                  </div>
+                  <div class="justify-content-end">
+                    <a
+                      href="javascript:void(0)"
+                      class="closebtn align-self-center"
+                      onclick="closeNav()"
+                      ><img src="../images/fi_x.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#our-services" class="nav-link">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#why-us" class="nav-link">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#testimonial" class="nav-link">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a href="#faq" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="btn btn-success btn-responsive px-4 text-white"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="dflex justify-content-end toggler-custom">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" onclick="openNav()">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -104,7 +135,7 @@
               <img
                 src="../images/Mercedes Car EQC 300kW Edition - 900x598 1.svg"
                 alt=""
-                class="position-absolute img-fluid"
+                class="position-absolute img-fluid img-1200"
               />
             </div>
           </div>
@@ -114,18 +145,18 @@
         <div class="container delete-padding">
           <div class="row">
             <div
-              class="col-lg-6 d-flex justify-content-start"
+              class="col-lg-6 d-flex justify-content-center"
               data-aos="fade-up-right"
               data-aos-delay="500"
             >
               <img
-                class="img-service img-fluid ms-2 ms-md-11"
+                class="img-service img-fluid ms-md-11"
                 src="../images/section2.svg"
                 alt=""
               />
             </div>
-            <div class="col-lg-6 d-flex justify-content-end">
-              <div class="second-desc ms-2 pr-md-12">
+            <div class="col-lg-6 d-flex justify-content-center">
+              <div class="second-desc pr-md-12">
                 <h2
                   class="second-desc-head sm-mid"
                   data-aos="fade-up-left"
@@ -200,7 +231,7 @@
         </div>
       </section>
       <section class="ms-md-11" id="why-us">
-        <div class="container delete-paddin mx-sm-1">
+        <div class="container delete-paddin">
           <div class="row ms-13">
             <h2 class="third mb-3" data-aos="fade-right">Why Us?</h2>
             <p class="m-0" data-aos="fade-right">
@@ -288,7 +319,7 @@
             <div class="carousel-inner">
               <div class="carousel-item">
                 <div class="fourth-carousel-padding">
-                  <div class="card mb-3 mx-auto card-custom">
+                  <div class="card mb-3 card-custom">
                     <div class="row g-0 my-auto">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
@@ -342,7 +373,7 @@
                             <img src="../images/star.svg" alt="" />
                             <img src="../images/star.svg" alt="" />
                           </span>
-                          <p class="card-text justivfy">
+                          <p class="card-text">
                             This is a wider card with supporting text below as a
                             natural lead-in to additional content. This content
                             is a little bit longer.
@@ -428,8 +459,8 @@
                   </h1>
                   <p class="card-text fifth-card-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod <br />
-                    tempor incididunt ut labore et dolore magna aliqua.
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
                   </p>
                   <a href="#" class="btn btn-success fifth-btn"
                     >Mulai Sewa Mobil</a
@@ -440,11 +471,11 @@
           </div>
         </div>
       </section>
-      <section class="sixth" id="faq">
+      <section id="faq">
         <div class="container delete-padding">
           <div class="row ms-2 ms-md-11">
             <div class="col-lg-5 justify-content-start">
-              <h2 class="mb-3 ms-13" data-aos="fade-right">
+              <h2 class="mb-3 ms-13 faq-h2" data-aos="fade-right">
                 Frequently Asked Question
               </h2>
               <p class="ms-13" data-aos="fade-right" data-aos-delay="100">
@@ -458,7 +489,7 @@
                   data-aos="fade-up-left"
                   data-aos-delay="100"
                 >
-                  <h2 class="accordion-header" id="headingTwo">
+                  <h2 class="accordion-header" id="headingOne">
                     <button
                       class="accordion-button collapsed"
                       type="button"
@@ -647,13 +678,17 @@
               <p>binarcarrental@gmail.com</p>
               <p>081-233-334-808</p>
             </div>
-            <div class="col-lg-3 pl-md-14">
-              <a href="#" class="nav-link delete-padding"
+            <div class="col-lg-3 footer-2">
+              <a href="#our-services" class="nav-link delete-padding"
                 ><p>Our Services</p></a
               >
-              <a href="#" class="nav-link delete-padding"><p>Why Us</p></a>
-              <a href="#" class="nav-link delete-padding"><p>Testimonial</p></a>
-              <a href="#" class="nav-link delete-padding"><p>FAQ</p></a>
+              <a href="#why-us" class="nav-link delete-padding"
+                ><p>Why Us</p></a
+              >
+              <a href="#testimonial" class="nav-link delete-padding"
+                ><p>Testimonial</p></a
+              >
+              <a href="#faq" class="nav-link delete-padding"><p>FAQ</p></a>
             </div>
             <div class="col-lg-3">
               <p>Connect with us</p>
@@ -706,5 +741,16 @@
     </script>
     <script src="../scripts/carouselhalf.js"></script>
     <script src="../scripts/navbar-scroll.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "50vw";
+        document.getElementById("incativeSide").style.width = "50vw";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("incativeSide").style.width = "0";
+      }
+    </script>
   </body>
 </html>

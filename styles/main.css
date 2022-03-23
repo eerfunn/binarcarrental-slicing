@@ -4,7 +4,7 @@
 @font-face {
   font-family: "Helvetica";
   src: url(../fonts/Helvetica.ttf);
-  font-weight: 300;
+  font-weight: 400;
 }
 @font-face {
   font-family: "Helvetica";
@@ -17,7 +17,16 @@
 body {
   font-family: Helvetica;
   font-size: 14px;
+
   color: black !important;
+}
+p {
+  font-family: "Helvetica";
+  font-weight: 300;
+}
+.fifth-card-text {
+  padding-left: 22.9vw;
+  padding-right: 22.9vw;
 }
 .container {
   overflow-x: hidden;
@@ -87,7 +96,7 @@ h2 {
 }
 
 .bgimg {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 /* Second Section */
@@ -199,11 +208,13 @@ h2 {
 }
 
 /* Section Fifth */
+
 .fifth-card-content {
   background-color: #0d28a6;
   color: white;
   margin-top: 100px;
   height: 326px;
+  border-radius: 13px !important;
 }
 .fifth-card-title {
   margin-top: 48px;
@@ -226,6 +237,9 @@ h2 {
 .sixth-faq-title {
   margin-right: 132px;
 }
+.faq-h2 {
+  margin-top: 104px;
+}
 
 /* Footer */
 footer {
@@ -235,6 +249,63 @@ footer {
 .footer-img-socmed {
   margin-right: 1rem;
   margin-bottom: 1rem;
+}
+
+/* W3school Sidebar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 34px;
+}
+.incativeSideBG {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 34px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 0px;
+  margin-top: -15px !important;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /* For Screen With Width 768px and Up */
@@ -273,7 +344,7 @@ footer {
     margin-left: 5px;
   }
   .card-custom {
-    width: 250px !important;
+    width: 95vw !important;
     height: 400px;
     background-color: #f1f3ff;
     padding-left: auto;
@@ -290,11 +361,18 @@ footer {
   .testi-content {
     text-align: center !important;
   }
-  .img-service {
-    width: 300px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .testi-content p,
+  h5 {
+    text-align: left !important;
+    font-size: 14px;
   }
+  .testi-content p {
+    font-weight: 300 !important;
+  }
+  .testi-content h5 {
+    font-weight: 400 !important;
+  }
+
   .fifth-card {
     margin-left: 10px;
     margin-right: 10px;
@@ -310,6 +388,26 @@ footer {
   }
   .card {
     width: 100%;
+  }
+  .second-desc {
+    margin-top: 20px;
+  }
+  .img-service {
+    width: 60vw;
+    margin-bottom: 24px;
+  }
+  .second-desc {
+    margin-top: 0px;
+  }
+  .img-1200 {
+    max-width: 95vw;
+  }
+  .fifth-card-content {
+    padding: 48px 42px;
+  }
+
+  .fifth-card-title {
+    font-size: 24px;
   }
 }
 
@@ -330,8 +428,8 @@ footer {
     right: 15%;
   }
   .sm-mid {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
   }
   .fifth-card-content {
     min-height: 400px !important;
@@ -341,6 +439,30 @@ footer {
   .fifth-card {
     margin-top: 100px;
   }
+  .btn-responsive {
+    width: 81px;
+    margin-left: 16px;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    height: 36px;
+  }
+  .side-logo {
+    font-weight: 700 !important;
+  }
+  .bgimg {
+    padding-top: 140px !important;
+    padding-left: 16px;
+  }
+  .img-1200 {
+    margin-top: 24px;
+  }
+  .third-card-item {
+    width: 90vw !important;
+  }
+  .fifth-card-text {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
 }
 
 @media (min-width: 991px) {
@@ -349,5 +471,30 @@ footer {
   }
   .toggler-custom {
     display: none;
+  }
+  .sidenav {
+    display: none;
+  }
+  .footer-2 {
+    padding-left: 6vw;
+  }
+  .sixth-accordion-sm {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .img-1200 {
+    max-width: 50vw;
+  }
+  .img-12002 {
+    max-width: 30vw;
+  }
+}
+@media (max-width: 420px) {
+  .img-service {
+    width: 252px;
+  }
+  .bgimg {
+    padding-top: 100px !important;
   }
 }

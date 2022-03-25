@@ -11,6 +11,11 @@
   src: url(../fonts/Helvetica-Bold.ttf);
   font-weight: 700;
 }
+@font-face {
+  font-family: "Helvetica Light";
+  src: url(../fonts/4215-font.otf);
+  font-weight: 300;
+}
 
 /* Body */
 
@@ -21,8 +26,12 @@ body {
   color: black !important;
 }
 p {
-  font-family: "Helvetica";
+  font-family: "Helvetica Light";
   font-weight: 300;
+}
+.helvetica400 {
+  font-family: "Helvetica";
+  font-weight: 400;
 }
 .fifth-card-text {
   padding-left: 22.9vw;
@@ -154,7 +163,24 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
 }
-
+.holder {
+  border: 0.5px solid #c4c4c4 !important;
+  border-radius: 60px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.holder:hover {
+  background-color: green;
+}
+.arrow-carousel {
+  width: 7px;
+  height: 12px;
+}
+.holder:hover > .arrow-carousel {
+  filter: invert(100%) sepia(4%) saturate(16%) hue-rotate(112deg)
+    brightness(107%) contrast(104%);
+}
 /* Carousel */
 .carousel,
 .carousel-innr,
@@ -242,7 +268,7 @@ h2 {
 }
 .accordion-button {
   border: 1px solid #d4d4d4;
-  border-radius: 4px;
+  border-radius: 4px !important;
 }
 
 /* Footer */
@@ -348,9 +374,12 @@ footer {
     margin-left: 5px;
   }
   .card-custom {
-    width: 95vw !important;
-    height: 400px;
+    width: 91vw !important;
+    height: 372px;
     background-color: #f1f3ff;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
     padding-left: auto;
     padding-right: auto;
   }
@@ -374,6 +403,7 @@ footer {
     font-weight: 300 !important;
   }
   .testi-content h5 {
+    font-family: "Helvetica";
     font-weight: 400 !important;
   }
 
@@ -382,10 +412,7 @@ footer {
     margin-right: 10px;
     width: auto;
   }
-  .sixth-accordion-sm {
-    padding-left: 8px;
-    padding-right: 10px;
-  }
+
   .fifth-card-title {
     margin-top: 0px;
     font-weight: 700;
@@ -412,12 +439,56 @@ footer {
 
   .fifth-card-title {
     font-size: 24px;
+    line-height: 36px;
   }
   .main-left {
     margin-top: 0px;
   }
   footer {
-    margin-top: 60px;
+    margin-top: 77px;
+  }
+  .mt-40px {
+    margin-top: 40px !important;
+  }
+  .testi-content .card-text {
+    margin-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 8px !important;
+  }
+  .testi-content div {
+    margin-top: 8px !important;
+  }
+  .fourth {
+    margin-top: 77px;
+  }
+  .third-card-item {
+    margin-top: 24px;
+  }
+  .third {
+    margin-top: 77px;
+  }
+  .fifth-card {
+    margin-top: 77px !important;
+  }
+  .faq-h2 {
+    margin-top: 77px !important;
+  }
+  .smalllr-1rem {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  .img-service {
+    margin-top: 77px !important;
+  }
+  .card-body-whyus {
+    padding: 24px;
+  }
+  .martop0 {
+    margin-top: 0px !important;
+  }
+  .fifth-btn {
+    margin-top: 32px;
   }
 }
 
@@ -472,6 +543,9 @@ footer {
   .fifth-card-text {
     padding-left: 0vw;
     padding-right: 0vw;
+  }
+  .ms-13 {
+    text-align: center;
   }
 }
 

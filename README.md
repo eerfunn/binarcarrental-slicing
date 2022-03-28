@@ -1,5 +1,7 @@
 ##Challenge Chapter 03 - Full Stack Web Developer Class Binar Academy##
 
+Demo: https://eerfunn.github.io/binarcarrental-slicing/
+
 Sliced from Binar Car Rental UI Design.
 
 Feature:

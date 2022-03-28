@@ -5,7 +5,6 @@ Sliced from Binar Car Rental UI Design.
 Feature:
 
 1. Responsive Website, Optimized for 1440 & 360 Screen.
-2. Using AOS
 
 CSS Framework:
 
